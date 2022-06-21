@@ -1,6 +1,10 @@
 body{
   display: flex;
   flex-direction: column;
+  flex: 1;
+  /*overflow: hidden;*/
+  margin: 0;
+  border: 0;
 }
 
 .top{
@@ -32,19 +36,56 @@ li{
 .info{
   display: flex;
   flex-direction: column;
-  max-width: 40%;
-  max-height: fit-content;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 .big{
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 700;
   color: #f9faf8;
 }
 
 .small{
   font-size: 18px;
   color: #e5e7eb;
+}
+
+.more{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}  
+
+.more a{
+  color: rgb(6, 105, 6);
+}
+
+.hero a{
+  color: rgb(6, 105, 6);
+}
+
+.two{
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.quote{
+  background-color: #e5e7eb;
+  color: #1f2937;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 10%;
+}
+
+.quote :nth-child(2){
+  font-style: normal;
+  font-weight: 500;
+  margin-left: auto;
 }
 
 ul{
@@ -66,6 +107,21 @@ button{
   border-radius: 8px;
 }
 
+.more .image-low{
+  height: 150px;
+  width: 150px;
+}
+
+.image-low{
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  width: 500px 500px;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .image-top{
-  max-width: 40%
+  max-width: 50%;
 }
