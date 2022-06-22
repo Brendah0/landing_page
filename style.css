@@ -2,12 +2,12 @@ body{
   display: flex;
   flex-direction: column;
   flex: 1;
-  /*overflow: hidden;*/
   margin: 0;
   border: 0;
 }
 
-.top{
+.top,
+.footer{
   background-color: #1f2937;
   font-size: 24px;
   color: #f9faf8;
@@ -31,6 +31,9 @@ li{
   justify-content: space-around;
   align-items: center;
   padding: 5%;
+  margin: 0px;
+  max-width: fit-content;
+  max-height: 500px;
 }
 
 .info{
@@ -79,13 +82,33 @@ li{
   font-size: 36px;
   display: flex;
   flex-direction: column;
-  padding: 5% 10%;
+  padding: 50px;
 }
 
 .quote :nth-child(2){
   font-style: normal;
   font-weight: 500;
   margin-left: auto;
+}
+
+.action{
+  display: flex;
+  margin: 30px;
+  background-color: #3882f6;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 30px 60px;
+  color: #f9faf8;
+  justify-content: space-around;
+}
+
+.call :nth-child(1){
+  font-weight: 700;
+}
+
+.footer{
+  padding: 30px;
+  align-items: center;
 }
 
 ul{
@@ -107,9 +130,26 @@ button{
   border-radius: 8px;
 }
 
+.action button{
+  background-color: #3882f6;
+  color: #f9faf8;
+  border-width: 2px;
+  border-color: #f9faf8;
+  border-style: double;
+  border-radius: 8px;
+  max-width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .more .image-low{
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 .image-low{
@@ -124,4 +164,5 @@ button{
 
 .image-top{
   max-width: 50%;
+  margin-left: 20px;
 }
