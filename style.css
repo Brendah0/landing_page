@@ -148,8 +148,8 @@ button{
 }
 
 .more .image-low{
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  max-width: 200px;
 }
 
 .image-low{
